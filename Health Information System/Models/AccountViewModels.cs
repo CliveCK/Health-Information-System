@@ -49,9 +49,8 @@ namespace Health_Information_System.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "UserName")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +63,22 @@ namespace Health_Information_System.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "User Name")]
+        public string UserName { get; set; }
+
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string Surname { get; set; }
+
+        [Required]
+        [RegularExpression(@"\d{6,14}")]
+        public string ContactNo { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

@@ -21,7 +21,7 @@ namespace Health_Information_System.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("HIS", throwIfV1Schema: false)
         {
         }
 
