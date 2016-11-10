@@ -51,6 +51,10 @@ audio:not([controls]) {
   display: none;
 }
 
+.margin-top-20{
+    margin-top: 10%;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
