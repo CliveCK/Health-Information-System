@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2 margin-top-10">
+                <div class="row">
+                    <div class="col-xs-6 col-md-10">
+                        <a href="#" class="thumbnail">
+                            <img src="~/Images/Thumbnail.png" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Member</a></li>
+                    <li role="presentation"><a href="#">Approve</a></li>
+                    <li role="presentation" class="danger"><a href="#">Delete</a></li>
+                    <li role="presentation" class="active"><a href="#">Accounts</a></li>
+                    <li role="presentation"><a href="#">View Accounts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-md-offset-1">
+                @RenderBody()
+            </div><br />
+        </div>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

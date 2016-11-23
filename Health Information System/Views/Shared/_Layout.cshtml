@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Health Information System</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -29,9 +29,11 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+    <div class="container-fluid body-content">
+        @RenderBody()        
+    </div>
+    <div class="row text-center margin-top-10">
+        <hr style="width:60%"/>
         <footer>
             <p>&copy; @DateTime.Now.Year - HIS</p>
         </footer>
